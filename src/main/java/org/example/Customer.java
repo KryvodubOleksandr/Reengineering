@@ -53,18 +53,18 @@ public abstract class Customer {
     }
 
     public String printCustomerDaysOverdrawn() {
-        String accountDescription = "Account: IBAN: " + account.getIban() + ", Days Overdrawn: " + account.getDaysOverdrawn();
-        return getFullName() + accountDescription;
+        String fullName = getFullName();
+
+        return account.printCustomerDaysOverdrawn(fullName);
     }
 
     public String printCustomerMoney() {
-        String accountDescription = "";
-        accountDescription += "Account: IBAN: " + account.getIban() + ", Money: " + account.getMoney();
-        return getFullName() + accountDescription;
+        String fullName = getFullName();
+
+        return account.printCustomerMoney(fullName);
     }
 
     public String printCustomerAccount() {
-        return "Account: IBAN: " + account.getIban() + ", Money: "
-                + account.getMoney() + ", Account type: " + account.getType();
+        return  account.printCustomerAccount();
     }
 }
