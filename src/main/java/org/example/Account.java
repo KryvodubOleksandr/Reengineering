@@ -93,4 +93,21 @@ public class Account {
     public String printCustomerAccount() {
         return "Account: IBAN: " + getIban() + ", Money: " + getAccountState().getMoney() + ", Account type: " + getType();
     }
+
+    public static class AccountType {
+        private boolean premium;
+
+        AccountType(boolean premium) {
+            this.premium = premium;
+        }
+
+        public boolean isPremium() {
+            return premium;
+        }
+
+        @Override
+        public String toString() {
+            return premium ? "premium" : "normal";
+        }
+    }
 }
