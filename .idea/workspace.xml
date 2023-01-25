@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d482c0e5-3cd8-4abb-9c66-efbd52664e26" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d482c0e5-3cd8-4abb-9c66-efbd52664e26" name="Changes" comment="Extracted methods for similar code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CompanyCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PersonCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
