@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d482c0e5-3cd8-4abb-9c66-efbd52664e26" name="Changes" comment="Print methods moved">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AccountState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d482c0e5-3cd8-4abb-9c66-efbd52664e26" name="Changes" comment="Separate class for money and currency">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CompanyCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CompanyCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PersonCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PersonCustomer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674626674332</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Separate class for money and currency">
+      <created>1674628202147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674628202147</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +116,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Replace conditional with polymorphism" />
     <MESSAGE value="Print methods moved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Print methods moved" />
+    <MESSAGE value="Separate class for money and currency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separate class for money and currency" />
   </component>
 </project>

@@ -20,9 +20,9 @@ public class Account {
         this.accountState = accountState;
     }
 
-    public Account() {
+    public Account(boolean isPremiumAccount, int daysOverdrawn) {
         super();
-        this.type = type;
+        this.type = new AccountType(isPremiumAccount);
         this.daysOverdrawn = daysOverdrawn;
     }
 
@@ -51,7 +51,6 @@ public class Account {
             return 0.20;
         }
     }
-
 
     public int getDaysOverdrawn() {
         return daysOverdrawn;
