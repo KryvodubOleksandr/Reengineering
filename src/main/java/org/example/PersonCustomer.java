@@ -7,10 +7,10 @@ public class PersonCustomer extends Customer {
 
 
     protected double calculateMoneyFor(Account account, double sum) {
-        if (account.getMoney() < 0) {
-            return (account.getMoney() - sum) - sum * account.overdraftFee();
+        if (account.getAccountState().getMoney() < 0) {
+            return (account.getAccountState().getMoney() - sum) - sum * account.overdraftFee();
         }
 
-        return account.getMoney() - sum;
+        return account.getAccountState().getMoney() - sum;
     }
 }

@@ -25,11 +25,11 @@ public abstract class Customer {
     protected abstract double calculateMoneyFor(Account account, double sum);
 
     public void withdraw(double sum, String currency) {
-        if (!account.getCurrency().equals(currency)) {
+        if (!account.getAccountState().getCurrency().equals(currency)) {
             throw new RuntimeException("Can't extract withdraw " + currency);
         }
 
-        account.setMoney(calculateMoneyFor(account, sum));
+        account.getAccountState().setMoney(calculateMoneyFor(account, sum));
     }
 
     public String getName() {

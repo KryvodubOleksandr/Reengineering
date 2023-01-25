@@ -10,10 +10,10 @@ public class CompanyCustomer extends Customer {
             this.companyOverdraftDiscount /= 2;
         }
 
-        if (account.getMoney() < 0) {
-            return (account.getMoney() - sum) - sum * account.overdraftFee() * this.companyOverdraftDiscount;
+        if (account.getAccountState().getMoney() < 0) {
+            return (account.getAccountState().getMoney() - sum) - sum * account.overdraftFee() * this.companyOverdraftDiscount;
         }
 
-        return account.getMoney() - sum;
+        return account.getAccountState().getMoney() - sum;
     }
 }

@@ -8,13 +8,19 @@ public class Account {
 
     private int daysOverdrawn;
 
-    private double money;
-
-    private String currency;
-
     private Customer customer;
 
-    public Account(AccountType type, int daysOverdrawn) {
+    private AccountState accountState;
+
+    public AccountState getAccountState() {
+        return accountState;
+    }
+
+    public void setAccountState(AccountState accountState) {
+        this.accountState = accountState;
+    }
+
+    public Account() {
         super();
         this.type = type;
         this.daysOverdrawn = daysOverdrawn;
@@ -59,14 +65,6 @@ public class Account {
         this.iban = iban;
     }
 
-    public void setMoney(double money) {
-        this.money = money;
-    }
-
-    public double getMoney() {
-        return money;
-    }
-
     public Customer getCustomer() {
         return customer;
     }
@@ -83,25 +81,17 @@ public class Account {
         return customer.getName() + " " + customer.getEmail();
     }
 
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
-
     public String printCustomerDaysOverdrawn(String fullName) {
         String accountDescription = "Account: IBAN: " + getIban() + ", Days Overdrawn: " + getDaysOverdrawn();
         return fullName + accountDescription;
     }
 
     public String printCustomerMoney(String fullName) {
-        String accountDescription = "Account: IBAN: " + getIban() + ", Money: " + getMoney();
+        String accountDescription = "Account: IBAN: " + getIban() + ", Money: " + getAccountState().getMoney();
         return fullName + accountDescription;
     }
 
     public String printCustomerAccount() {
-        return "Account: IBAN: " + getIban() + ", Money: " + getMoney() + ", Account type: " + getType();
+        return "Account: IBAN: " + getIban() + ", Money: " + getAccountState().getMoney() + ", Account type: " + getType();
     }
 }
